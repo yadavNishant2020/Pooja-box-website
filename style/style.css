@@ -3,21 +3,22 @@
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.header{
+.header {
     display: flex;
-justify-content: center;
+    justify-content: center;
     background-color: #E85992;
     color: white;
     font-family: 'Lato', sans-serif;
-    font-size:12px;
-    letter-spacing:1.5px;
-    padding:8px 10px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    padding: 8px 10px;
 }
+
 /* NAVIGATION BAR */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
@@ -25,8 +26,8 @@ justify-content: center;
 
 body,
 html {
-  font-family: "Montserrat", serif;
-  margin: 0;
+    font-family: "Montserrat", serif;
+    margin: 0;
 }
 
 h1,
@@ -36,76 +37,248 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 button,
 .btn {
-  font-family: inherit;
+    font-family: inherit;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  padding: 0.75rem 5vw;
-  box-shadow: 0 0 30px lightgray;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 0.75rem 5vw;
+    box-shadow: 0 0 30px lightgray;
+    justify-content: space-between;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
 
 
 nav p {
-  font-size: 25px;
-  font-weight: 600;
-  cursor: default;
-  font-family: 'EB Garamond', serif;
-color: #DBAF5B;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: default;
+    font-family: 'EB Garamond', serif;
+    color: #DBAF5B;
 }
 
 nav li {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
 }
 
 nav a {
-  text-decoration: none;
-  color: #676767;
-  padding: 0 1rem;
-  transition: 0.1s ease-in-out;
-  font-size: 20px;
+    text-decoration: none;
+    color: #676767;
+    padding: 0 1rem;
+    transition: 0.1s ease-in-out;
+    font-size: 20px;
 }
+
 nav a:hover {
-  color: #121212;
+    color: #121212;
 }
 
 nav .btn {
-  padding: 0.5rem 1rem;
-  margin: 0 0 0 0.5rem;
-  border: 1px solid #4caf50;
-  border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  font-size: 17px;
+    padding: 0.5rem 1rem;
+    margin: 0 0 0 0.5rem;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-size: 17px;
 }
 
-nav i{
+nav i {
     padding: 0 1rem;
 
 }
 
 /* Banner */
 
-.banner{
+.banner {
     position: relative;
     background-image: url(../images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 120vh;
     width: 100vw;
+}
+
+/* circularslider */
+
+.circularslider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.innerCOnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.innerCOnt img {
+    border-radius: 50%;
+    width: 140px;
+    justify-content: space-around;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Item Shown in square box */
+
+.head {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    margin: 20px 150px;
+    font-family: 'EB Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.head button {
+    background-color: #D3134F;
+    color: white;
+    font-size: 11px;
+    font-family: 'Lato', sans-serif;
+}
+
+.contnr {
+    display: flex;
+    justify-content: center;
+    margin: 20px 130px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.inrcontnr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inrcontnr img{
+    height: 200px;
+    width: 200px;
+    padding-bottom: 10px;
+}
+.inrcontnr p{
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 10px;
+}
+.inrcontnr button{
+    background-color: #D3134F;
+    color: white;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    width: 200px;
+    height: 30px;
+    
+
+}
+
+/* Rakhi Banner */
+.banner-img img {
+    width: 100%;
+}
+
+/* follow insta */
+
+.insta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    font-family: 'EB Garamond', serif;
+font-size: 16px;
+}
+
+.imgs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+
+}
+.imgs img{
+    height: 210px;
+    width: 210px;
+    padding-bottom: 10px;
+}
+
+/* footer */
+
+.footer{
+    padding: 20px 130px;
+    padding-top: 50px;
+    background-color: #FFAFB6;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.brand{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: default;
+    font-family: 'EB Garamond', serif;
+    color: #ffffff;
+    margin-bottom: 150px;
+}
+.brand p{
+    margin-bottom: 40px;
+
+}
+.brand button{
+     height: 30px;
+     width: 100px;
+     border-radius: 2px;
+     border: white 2px solid;
+     background-color: transparent;
+     color: white;
+    
+}
+.brand i{
+padding-top: 5px;
+padding-left: 5px;
+}
+.footer h1{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.footer ul{
+    padding-inline-start: 0px;
+
+}
+
+.footer li{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    padding-bottom: 15px;
+    font-weight: 400;
+
 }
