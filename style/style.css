@@ -2,7 +2,7 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
 }
 
@@ -101,6 +101,9 @@ nav i {
 
 }
 
+/* responsive code */
+/* for phone */
+
 /* Banner */
 
 .banner {
@@ -109,7 +112,7 @@ nav i {
     background-repeat: no-repeat;
     background-size: cover;
     height: 120vh;
-    width: 100vw;
+    width: auto;
 }
 
 /* circularslider */
@@ -172,31 +175,36 @@ nav i {
     justify-content: space-around;
 }
 
-.inrcontnr{
+.inrcontnr {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.inrcontnr img{
+
+.inrcontnr img {
     height: 200px;
     width: 200px;
     padding-bottom: 10px;
 }
-.inrcontnr p{
+
+.inrcontnr p {
     font-size: 13px;
     font-family: 'Lato', sans-serif;
     padding-bottom: 10px;
 }
-.inrcontnr button{
+
+.inrcontnr button {
     background-color: #D3134F;
     color: white;
     font-size: 14px;
     font-family: 'Lato', sans-serif;
     width: 200px;
     height: 30px;
-    
+
 
 }
+
+
 
 /* Rakhi Banner */
 .banner-img img {
@@ -205,23 +213,24 @@ nav i {
 
 /* follow insta */
 
-.insta{
+.insta {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
     font-family: 'EB Garamond', serif;
-font-size: 16px;
+    font-size: 16px;
 }
 
-.imgs{
+.imgs {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 10px;
 
 }
-.imgs img{
+
+.imgs img {
     height: 210px;
     width: 210px;
     padding-bottom: 10px;
@@ -229,7 +238,7 @@ font-size: 16px;
 
 /* footer */
 
-.footer{
+.footer {
     padding: 20px 130px;
     padding-top: 50px;
     background-color: #FFAFB6;
@@ -238,7 +247,8 @@ font-size: 16px;
     flex-direction: row;
     justify-content: space-around;
 }
-.brand{
+
+.brand {
     font-size: 25px;
     font-weight: 600;
     cursor: default;
@@ -246,39 +256,91 @@ font-size: 16px;
     color: #ffffff;
     margin-bottom: 150px;
 }
-.brand p{
+
+.brand p {
     margin-bottom: 40px;
 
 }
-.brand button{
-     height: 30px;
-     width: 100px;
-     border-radius: 2px;
-     border: white 2px solid;
-     background-color: transparent;
-     color: white;
-    
+
+.brand button {
+    height: 30px;
+    width: 100px;
+    border-radius: 2px;
+    border: white 2px solid;
+    background-color: transparent;
+    color: white;
+
 }
-.brand i{
-padding-top: 5px;
-padding-left: 5px;
+
+.brand i {
+    padding-top: 5px;
+    padding-left: 5px;
 }
-.footer h1{
+
+.footer h1 {
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     padding-bottom: 20px;
 }
-.footer ul{
+
+.footer ul {
     padding-inline-start: 0px;
 
 }
 
-.footer li{
+.footer li {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     padding-bottom: 15px;
     font-weight: 400;
 
+}
+@media only screen and (max-width: 600px) {
+
+    nav a {
+        visibility: hidden;
+
+    }
+
+    .banner {
+        background-size: cover;
+        height: 40vh;
+        width: 100vw;
+    }
+
+    .innerCOnt {
+        width: 500px;
+    }
+
+    .innerCOnt img {
+        width: 100px;
+        justify-content: space-around;
+        margin-left: 10px;
+        padding-bottom: 10px;
+        overflow: visible;
+    }
+
+    .circularslider {
+        overflow-x: visible;
+    }
+
+    .head {
+        margin-left: 20px;
+        margin-right: 50px;
+        font-size: 18px;
+
+    }
+    .inrcontnr img {
+        margin-left: 10px;
+    }
+    .footer {flex-direction: column;}
+    .brand  {
+        margin-bottom: 40px;
+    
+    }
+    ul{
+        list-style: none;
+    }
 }
